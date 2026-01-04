@@ -21,7 +21,7 @@ app.use("/api", productRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Flutter Web
-const flutterBuildPath = path.join(__dirname, "../test/build/web");
+const flutterBuildPath = path.join(__dirname, "../frontend/build/web");
 app.use(express.static(flutterBuildPath));
 
 // ✅ الحل النهائي
