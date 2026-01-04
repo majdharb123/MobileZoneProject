@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
   Future<void> fetchProducts() async {
     try {
       final response = await http.get(
-        Uri.parse("http://127.0.0.1:5000/api/product"),
+        Uri.parse("https://mobilezoneproject.onrender.com/api/product"),
       );
 
       if (response.statusCode == 200) {
@@ -164,7 +164,7 @@ class _HomeState extends State<Home> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12),
                             child: Image.network(
-                              "http://127.0.0.1:5000/uploads/${product.imageName}",
+                              "https://mobilezoneproject.onrender.com/uploads/${product.imageName}",
                               width: MediaQuery.of(context).size.width * 0.5,
                               fit: BoxFit.contain,
                               errorBuilder: (_, __, ___) => const Icon(

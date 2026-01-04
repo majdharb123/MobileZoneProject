@@ -25,7 +25,7 @@ class _LoginState extends State<Login> {
 
     try {
       final response = await http.post(
-        Uri.parse("http://127.0.0.1:5000/api/login"),
+        Uri.parse("https://mobilezoneproject.onrender.com/api/login"),
         headers: {"Content-Type": "application/json"},
         body: jsonEncode({
           "email": _emailController.text.trim(),

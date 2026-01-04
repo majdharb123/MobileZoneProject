@@ -29,7 +29,7 @@ class _RegisterState extends State<Register> {
 
     try {
       final response = await http.post(
-        Uri.parse("http://127.0.0.1:5000/api/register"), 
+        Uri.parse("https://mobilezoneproject.onrender.com/api/register"), 
         headers: {"Content-Type": "application/json"},
         body: jsonEncode({
           "name": _nameController.text.trim(),
